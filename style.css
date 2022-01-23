@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url("./BebasNeue.ttf");
+}
+
+.external-font{
+    font-family: BebasNeue, sans-serif;
+    font-size: 60px;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.small p:hover{
+    font-size: 30%;
+}
+
+#main{
+    background: url("./An.jpg");
+    background-size: contain;
+    animation: fadeIn 5s;
+}
+
+.mainbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.75);
+    background-size: contain;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.mainbg p{
+    font-size: 100px;
+}
