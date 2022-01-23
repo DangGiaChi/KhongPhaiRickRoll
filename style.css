@@ -3,6 +3,11 @@
     src: url("./BebasNeue.ttf");
 }
 
+@font-face {
+    font-family: "Ice";
+    src: url(./Ice.ttf);
+}
+
 .external-font{
     font-family: BebasNeue, sans-serif;
     font-size: 60px;
@@ -24,7 +29,6 @@
 #main{
     background: url("./An.jpg");
     background-size: contain;
-    animation: fadeIn 5s;
 }
 
 .mainbg{
@@ -32,21 +36,43 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25%;
+    height: 35%;
     background: rgba(255, 255, 255, 0.75);
     background-size: contain;
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
 }
 
 @keyframes fadeIn {
     from{
         opacity: 0;
+        margin-top: 50px;
     }
     to{
         opacity: 1;
     }
 }
 
+@keyframes Play{
+    from{
+        font-size: 300%;
+    }
+    to{
+        font-size: 350%;
+    }
+}
+
+#main-text{
+    text-align: center;
+    font-size: 350%;
+    font-family: Ice;
+    color: rgb(240, 97, 81);
+    animation: Play 0.5s infinite;
+    animation-direction: alternate;
+}
+
 .mainbg p{
-    font-size: 100px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 250%;
+    font-family: BebasNeue;
 }
